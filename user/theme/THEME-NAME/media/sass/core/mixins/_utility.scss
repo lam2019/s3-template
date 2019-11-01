@@ -137,7 +137,7 @@ $align: left, right, center;
 
 // letterspacingクラスの生成
 @mixin letterspacing($sufix: "") {
-  $i: 20;
+  $i: 0;
   @while $i <= 100 {
     .ls#{$i}#{$sufix} {
       letter-spacing: #{$i * 0.001}em !important;

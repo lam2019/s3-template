@@ -33,6 +33,14 @@ h5 {
     z-index: 9;
   }
 }
+//電話番号
+a[href^="tel:"] {
+  text-decoration: none;
+  color: $base-font-color;
+  @media only screen and (min-width: $screen-pc-min) {
+    pointer-events: none;
+  }
+}
 
 //CMS-PDF設定
 .pdf-icon {
@@ -54,7 +62,7 @@ body {
   @if $header-fixed-pc {
     padding-top: $header-height-pc;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: $screen-tb) {
     @if $header-fixed-sp {
       position: relative;
       padding-top: $header-height-sp;

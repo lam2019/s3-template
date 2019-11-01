@@ -112,6 +112,15 @@ $align-items: (
   margin-right: auto !important;
 }
 
+//フロートクラス（forSp)
+.left-sp {
+  float: left !important;
+}
+
+.right-sp {
+  float: right !important;
+}
+
 // フォント太さクラス
 .normal {
   font-weight: normal;
